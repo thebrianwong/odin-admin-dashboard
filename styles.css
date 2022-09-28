@@ -6,6 +6,8 @@
 
 .sidebar-container {
     grid-area: 1 / 1 / 7 / 2;
+    background-color: #1892d3;
+    color: white;
 }
 
 .nav-container {
@@ -17,7 +19,7 @@
 }
 
 /* just to visualize, remove later */
-.sidebar-container,
+/* .sidebar-container, */
 .nav-container,
 .contents-container {
     background-color: wheat;
