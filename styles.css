@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+.sidebar-container {
+    grid-area: 1 / 1 / 7 / 2;
+}
+
+.nav-container {
+    grid-area: 1 / 2 / 2 / 7;
+}
+
+.contents-container {
+    grid-area: 2 / 2 / 7 / 7;
+}
+
+/* just to visualize, remove later */
+.sidebar-container,
+.nav-container,
+.contents-container {
+    background-color: wheat;
+    border: solid 1px aquamarine;
+}
