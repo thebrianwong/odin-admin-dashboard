@@ -16,7 +16,19 @@
 
 .nav-container {
     grid-area: 1 / 2 / 2 / 7;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
     background-color: white;
+}
+
+.nav-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.nav-bottom {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
 }
 
 .contents-container {
