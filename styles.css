@@ -56,6 +56,26 @@
 .projects-card {
     height: 200px;
     width: auto;
+    border-left: solid 7px #efb428;
+    border-radius: 8px;
+    box-shadow: 1px 5px 5px #d3dae2;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.projects-card > h3 {
+    margin: 16px 16px 0 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.projects-card > p {
+    margin: 0 16px 0;
+}
+.projects-card > div {
+    margin: 0 16px 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .announcements-section {
