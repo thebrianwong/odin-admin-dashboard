@@ -16,16 +16,17 @@
 
 .nav-container {
     grid-area: 1 / 2 / 2 / 7;
+    background-color: white;
 }
 
 .contents-container {
     grid-area: 2 / 2 / 7 / 7;
+    background-color: #e1e8f0;
 }
 
 /* just to visualize, remove later */
 /* .sidebar-container, */
 .nav-container,
 .contents-container {
-    background-color: wheat;
-    border: solid 1px aquamarine;
+    border: solid 1px black;
 }
