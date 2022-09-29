@@ -53,7 +53,8 @@
 }
 
 .projects-card {
-    
+    height: 200px;
+    width: auto;
 }
 
 .announcements-section {
