@@ -5,13 +5,14 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 7fr;
+    /* grid-template-rows: 1fr 7fr; */
 }
 
 .sidebar-container {
     grid-area: 1 / 1 / 7 / 2;
     background-color: #1892d3;
     color: white;
+    height: 100vh;
 }
 
 .header-container {
