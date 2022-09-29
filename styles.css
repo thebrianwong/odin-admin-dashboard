@@ -33,7 +33,29 @@
 
 .contents-container {
     grid-area: 2 / 2 / 7 / 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #e1e8f0;
+}
+
+.projects-section {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcements-section {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending-section {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.projects-container > div,
+.announcements-container > div,
+.trending-section > div {
+    display: grid;
+    background-color: white;
 }
 
 /* just to visualize, remove later */
