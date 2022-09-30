@@ -12,7 +12,22 @@
     grid-area: 1 / 1 / 7 / 2;
     background-color: #1892d3;
     color: white;
-    height: 100vh;
+}
+
+.sidebar-container > * {
+    position: fixed;
+}
+
+.sidebar-container > p:nth-child(1) {
+
+}
+
+.sidebar-container > ul:nth-child(2) {
+    top: 10%;
+}
+
+.sidebar-container > ul:nth-child(3) {
+    top: 30%;
 }
 
 .header-container {
@@ -56,6 +71,7 @@
 .projects-card {
     height: 200px;
     width: auto;
+    max-width: 440px;
     border-left: solid 7px #efb428;
     border-radius: 8px;
     box-shadow: 1px 5px 5px #d3dae2;
