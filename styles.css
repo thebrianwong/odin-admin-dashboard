@@ -219,6 +219,16 @@ a {
     padding: 10px 20px;
 }
 
+.trending-account div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-account p {
+    margin: 0;
+}
+
 .projects-container > div,
 .announcements-container > div,
 .trending-section > div {
