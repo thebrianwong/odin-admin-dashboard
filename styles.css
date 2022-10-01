@@ -30,13 +30,14 @@
 
 .sidebar-container > ul > div > li {
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 15px;
 }
 
 .sidebar-container > div:nth-child(1) {
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 .sidebar-container > div:nth-child(1) > img {
@@ -44,7 +45,9 @@
 }
 
 .sidebar-container > div:nth-child(1) > p {
-    margin: 0 0 0 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 15px;
 }
 
 .sidebar-container > ul:nth-child(2) {
