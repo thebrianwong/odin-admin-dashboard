@@ -18,8 +18,17 @@
     position: fixed;
 }
 
-.sidebar-container > p:nth-child(1) {
+.sidebar-container > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
 
+.sidebar-container > div:nth-child(1) > img {
+
+}
+
+.sidebar-container > div:nth-child(1) > p {
+    margin: 0 0 0 10px;
 }
 
 .sidebar-container > ul:nth-child(2) {
