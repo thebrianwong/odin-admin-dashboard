@@ -197,11 +197,26 @@ a {
     margin: 0 20px 20px 0;
 }
 
+.trending-container > div:nth-child(1) {
+    padding-top: 20px;
+}
+
+.trending-container > div:nth-child(4) {
+    padding-bottom: 20px;
+}
+
 .trending-container img {
     height: 100px;
     width: auto;
     border: solid 1px lightgray;
     border-radius: 20px;
+    place-self: center;
+}
+
+.trending-account {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    padding: 10px 20px;
 }
 
 .projects-container > div,
