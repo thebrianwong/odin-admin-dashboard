@@ -51,8 +51,8 @@
     grid-area: 2 / 2 / 7 / 7;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    grid-auto-rows: 30%;
+    grid-template-rows: 1fr 1fr;
+    /* grid-auto-rows: 30%; */
     background-color: #e1e8f0;
     gap: 20px;
 }
