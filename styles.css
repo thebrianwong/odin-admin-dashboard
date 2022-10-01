@@ -18,6 +18,15 @@
     position: fixed;
 }
 
+.sidebar-container > ul {
+    list-style: none;
+}
+
+.sidebar-container > ul > div {
+    display: flex;
+    align-items: center;
+}
+
 .sidebar-container > div:nth-child(1) {
     display: flex;
     align-items: center;
