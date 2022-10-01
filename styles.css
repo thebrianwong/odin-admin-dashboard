@@ -229,6 +229,16 @@ a {
     margin: 0;
 }
 
+.trending-account > div > p:nth-child(1) {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.trending-account > div > p:nth-child(2) {
+    color: rgb(99, 99, 99);
+    font-size: 0.8rem;
+}
+
 .projects-container > div,
 .announcements-container > div,
 .trending-section > div {
