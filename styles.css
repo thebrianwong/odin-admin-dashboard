@@ -189,6 +189,13 @@
     margin: 0 20px 20px 0;
 }
 
+.trending-container img {
+    height: 100px;
+    width: auto;
+    border: solid 1px lightgray;
+    border-radius: 20px;
+}
+
 .projects-container > div,
 .announcements-container > div,
 .trending-section > div {
