@@ -25,6 +25,13 @@
 .sidebar-container > ul > div {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-container > ul > div > li {
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding-left: 15px;
 }
 
 .sidebar-container > div:nth-child(1) {
@@ -45,7 +52,7 @@
 }
 
 .sidebar-container > ul:nth-child(3) {
-    top: 30%;
+    top: 45%;
 }
 
 .sidebar-container > div:nth-child(4) {
