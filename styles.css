@@ -76,13 +76,14 @@ a {
 .header-container {
     grid-area: 1 / 2 / 2 / 7;
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
     background-color: white;
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    margin-right: 50px;
 }
 
 form {
@@ -103,6 +104,27 @@ form [form="search"] {
     height: 25px;
     outline: none;
     width: 75%;
+}
+
+.header-top > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.header-top > div > button {
+    justify-self: end;
+}
+
+.header-top > div > p {
+
+}
+
+.header-avatar {
+    height: 75px;
+    width: auto;
+    border: solid 1px lightgray;
+    border-radius: 20px;
 }
 
 .header-bottom {
