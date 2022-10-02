@@ -85,6 +85,15 @@ a {
     grid-template-columns: 2fr 1fr;
 }
 
+form {
+    display: flex;
+    align-items: center;
+}
+
+form [form="search"] {
+    margin: 0 15px 0 50px;
+}
+
 #search {
     appearance: none;
     background-color: #e1e8f0;
