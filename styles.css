@@ -97,7 +97,7 @@ form {
     align-items: center;
 }
 
-form [form="search"] {
+form .icon-button {
     margin: 0 15px 0 50px;
 }
 
