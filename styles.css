@@ -116,10 +116,6 @@ form [form="search"] {
     justify-self: end;
 }
 
-.header-top > div > p {
-
-}
-
 .header-avatar {
     height: 75px;
     width: auto;
@@ -130,6 +126,23 @@ form [form="search"] {
 .header-bottom {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+}
+
+.header-bottom > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.header-bottom > div:nth-child(2) > button {
+    appearance: none;
+    background-color: #1892d3;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    font-weight: 600;
+    height: 50px;
+    width: 125px;
 }
 
 .contents-container {
