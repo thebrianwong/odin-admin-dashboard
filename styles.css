@@ -18,6 +18,10 @@
     position: fixed;
 }
 
+.sidebar-container > *:nth-child(-n+3) * {
+    text-decoration: none;
+}
+
 .sidebar-container > ul {
     list-style: none;
 }
