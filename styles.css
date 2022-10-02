@@ -183,11 +183,17 @@ form .icon-button {
     border: none;
     border-radius: 32px;
     color: white;
+    cursor: pointer;
     font-weight: 600;
     height: 50px;
     margin: 0 10px;
     padding: 0;
     width: 125px;
+}
+
+.header-bottom > div:nth-child(2) > button:active {
+    background-color: #1379af;
+    box-shadow: inset 0 3px 2px lightgray;
 }
 
 .contents-container {
