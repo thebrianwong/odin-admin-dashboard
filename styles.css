@@ -14,61 +14,56 @@
     color: white;
 }
 
-.sidebar-container > * {
+.sidebar-section {
     position: fixed;
 }
 
-.sidebar-container > *:nth-child(-n+3) * {
+.sidebar-section > *:nth-child(-n+3) * {
     text-decoration: none;
 }
 
-.sidebar-container > ul {
+.sidebar-section > ul {
     list-style: none;
 }
 
-.sidebar-container > ul > div {
+.sidebar-section > ul > div {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.sidebar-container > ul > div > li {
+.sidebar-section > ul > div > li {
     font-size: 1.75rem;
     font-weight: 500;
     padding-left: 15px;
 }
 
-.sidebar-container > div:nth-child(1) {
+.sidebar-section > div:nth-child(1) {
     display: flex;
     align-items: center;
     margin-left: 15px;
 }
 
-.sidebar-container > div:nth-child(1) > img {
+.sidebar-section > div:nth-child(1) > img {
 
 }
 
-.sidebar-container > div:nth-child(1) > p {
+.sidebar-section > div:nth-child(1) > p {
     font-size: 2rem;
     font-weight: 600;
     margin-left: 15px;
 }
 
-.sidebar-container > ul:nth-child(2) {
-    top: 10%;
+.sidebar-section > ul:nth-child(3) {
+    margin-top: 48px;
 }
 
-.sidebar-container > ul:nth-child(3) {
-    top: 45%;
-}
-
-.sidebar-container > div:nth-child(4) {
-    bottom: 7.5%;
-    margin-left: 78px;
+.sidebar-section > div:nth-child(4) {
+    margin: 250px 0 0 78px;
     width: 155px;
 }
 
-.sidebar-container > div:nth-child(4) > p {
+.sidebar-section > div:nth-child(4) > p {
     margin: 0;
     padding-bottom: 5px;
 }
@@ -123,7 +118,7 @@ form .icon-button {
     justify-self: end;
 }
 
-.header-top > div > img {
+.header-top > div > a > img {
     margin: 0 10px;
 }
 
