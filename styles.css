@@ -130,7 +130,35 @@ form [form="search"] {
 .header-bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-right: 25px;
+    margin: 0 25px 20px 0;
+}
+
+.header-bottom > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.header-bottom > div:nth-child(1) > img {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100px;
+    justify-self: end;
+    margin-right: 10px;
+    width: auto;
+}
+
+.header-bottom > div:nth-child(1) > p {
+    font-weight: 600;
+}
+
+.header-bottom > div:nth-child(1) > p:nth-child(2) {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.header-bottom > div:nth-child(1) > p:nth-child(3) {
+    font-size: 1.5rem;
+    margin-top: 0;
 }
 
 .header-bottom > div:nth-child(2) {
