@@ -227,12 +227,9 @@ form .icon-button {
 
 .projects-card {
     height: 200px;
-    width: auto;
-    max-width: 440px;
     border-left: solid 7px #efb428;
     border-radius: 8px;
     box-shadow: 1px 5px 5px #d3dae2;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .projects-card > h3 {
