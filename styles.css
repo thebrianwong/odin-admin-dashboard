@@ -78,6 +78,8 @@ a {
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-color: white;
+    box-shadow: 7px 6px 10px lightgrey;
+    z-index: 1;
 }
 
 .header-top {
@@ -384,7 +386,7 @@ form [form="search"] {
 
 /* just to visualize, remove later */
 /* .sidebar-container, */
-.header-container,
+/* .header-container,
 .contents-container {
     border: solid 1px black;
-}
+} */
