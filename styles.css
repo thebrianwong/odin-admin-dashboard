@@ -388,6 +388,114 @@ form .icon-button {
     background-color: white;
 }
 
+@media (max-width: 1150px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sidebar-container{
+        height: 100px;
+    }
+
+    .sidebar-section {
+        position: fixed;
+    }
+
+    .header-container,
+    .header-container > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-container > div {
+        margin-top: 20px;
+    }
+
+    .header-top {
+        margin-right: 0;
+    }
+
+    .header-top > div > p {
+       margin-right: 20px;
+    }
+
+    form .icon-button {
+        margin: 0 5px 0 15px;
+    }
+
+    .header-bottom {
+        margin-right: 0;
+    }
+
+    .header-bottom > div:nth-child(1) {
+        display: none;
+    }
+
+    .header-bottom > div:nth-child(2) {
+        display: flex;
+        flex: auto;
+        justify-content: space-evenly;
+    }
+
+    .header-bottom > div:nth-child(2) > button {
+        min-width: 70px;
+        width: auto;
+    }
+
+    .contents-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .announcements-trending > div:nth-child(1) {
+        margin-left: 20px;
+    }
+
+    .announcements-trending > div:nth-child(2) {
+        margin: 20px 20px 0;
+    }
+
+    .trending-account {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-section {
+        margin-right: 20px;
+    }
+
+    .projects-card {
+        height: auto;
+    }
+
+    /* for testing */
+    *{
+        outline: 1px solid red;
+       }
+}
+
+@media (max-width: 500px) {
+    .header-top {
+        flex-direction: column;
+    }
+
+    #form {
+        align-self: center;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
 /* just to visualize, remove later */
 /* .sidebar-container, */
 /* .header-container,
