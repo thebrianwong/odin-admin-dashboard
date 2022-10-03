@@ -222,7 +222,7 @@ form .icon-button {
 }
 
 .projects-card {
-    height: 200px;
+    height: auto;
     border-left: solid 7px #efb428;
     border-radius: 8px;
     box-shadow: 1px 5px 5px #d3dae2;
@@ -400,6 +400,7 @@ form .icon-button {
 
     .sidebar-section {
         position: fixed;
+        width: 100%;
     }
 
     .header-container,
@@ -474,10 +475,6 @@ form .icon-button {
         margin-right: 20px;
     }
 
-    .projects-card {
-        height: auto;
-    }
-
     /* for testing */
     *{
         outline: 1px solid red;
@@ -502,3 +499,12 @@ form .icon-button {
 .contents-container {
     border: solid 1px black;
 } */
+
+#menu-button {
+    cursor: pointer;
+    margin: 0 15px 0 auto;
+}
+
+#menu-button:active {
+    background-color: #efb428;
+}
