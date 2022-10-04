@@ -403,6 +403,11 @@ form .icon-button {
         width: 100%;
     }
 
+    .sidebar-section > ul:nth-child(2),
+    .sidebar-section > ul:nth-child(3) {
+        margin: 0;
+    }
+
     .header-container,
     .header-container > div {
         display: flex;
