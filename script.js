@@ -1,34 +1,16 @@
-let test = window.matchMedia("(min-width: 1151px)")
-function test1() {
-    console.log("test")
-}
-// if (!test.matches) {
-//     testAddMenuButton();
-//     addMenuFunctionality();
-// }
+/* Stated value is 1151px, not 1150px so that the addition of the menu button is
+synced up with the responsive CSS changes at 1150px */
+const window = window.matchMedia("(min-width: 1151px)")
 
-test.onchange = (e) => {
-    if (e.matches) {
-        // when screen grow above 1150px
-        removeMenuButton();
-        console.log("above 1150")
-    } else {
-        // when screen shrink at or below 1150px
-        testAddMenuButton();
-        addMenuFunctionality();
-        console.log("below 1150")
-    }
-}
-
-const testAddMenuButton = () => {
+const addMenuButton = () => {
     const sidebarHeader = document.querySelector(".sidebar-header");
-    const testMenuButton = document.createElement("button");
-    testMenuButton.classList.add("icon-button");
-    testMenuButton.setAttribute("id", "menu-button");
+    const menuButton = document.createElement("button");
+    menuButton.classList.add("icon-button");
+    menuButton.setAttribute("id", "menu-button");
     const testMenuImage = document.createElement("img");
     testMenuImage.setAttribute("src", "assets/icons/menu.png");
-    testMenuButton.appendChild(testMenuImage);
-    sidebarHeader.appendChild(testMenuButton);
+    menuButton.appendChild(testMenuImage);
+    sidebarHeader.appendChild(menuButton);
 }
 
 const addMenuFunctionality = () => {
@@ -37,11 +19,11 @@ const addMenuFunctionality = () => {
         const bodyElement = document.querySelector("body");
         const sidebarContainer = document.querySelector(".sidebar-container");
         if (sidebarContainer.style.height === "100vh") {
-            // remove menu
+            // Hides menu list
             sidebarContainer.style.height = "";
             bodyElement.style.overflow = "";
         } else {
-            // display menu
+            // Displays menu list
             sidebarContainer.style.height = "100vh";
             bodyElement.style.overflow = "hidden";
         }
@@ -54,8 +36,19 @@ const removeMenuButton = () => {
     sidebarHeader.removeChild(menuButton);
 }
 
-// Check if at or below 1150px when page first loads
-if (!test.matches) {
-    testAddMenuButton();
+// Checks if at or below 1151px when page first loads
+if (!window.matches) {
+    addMenuButton();
     addMenuFunctionality();
+}
+
+window.onchange = (e) => {
+    if (e.matches) {
+        // When viewport width is larger than 1151px
+        removeMenuButton();
+    } else {
+        // When viewport width is less than or equal to 1151px
+        addMenuButton();
+        addMenuFunctionality();
+    }
 }
