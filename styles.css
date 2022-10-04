@@ -408,6 +408,10 @@ form .icon-button {
         margin: 0;
     }
 
+    .sidebar-section > div:nth-child(4) {
+        margin-top: 5vh;
+    }
+
     .header-container,
     .header-container > div {
         display: flex;
