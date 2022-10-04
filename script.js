@@ -1,6 +1,6 @@
 /* Stated value is 1151px, not 1150px so that the addition of the menu button is
 synced up with the responsive CSS changes at 1150px */
-const window = window.matchMedia("(min-width: 1151px)")
+const currentViewport = window.matchMedia("(min-width: 1151px)")
 
 const addMenuButton = () => {
     const sidebarHeader = document.querySelector(".sidebar-header");
@@ -37,12 +37,12 @@ const removeMenuButton = () => {
 }
 
 // Checks if at or below 1151px when page first loads
-if (!window.matches) {
+if (!currentViewport.matches) {
     addMenuButton();
     addMenuFunctionality();
 }
 
-window.onchange = (e) => {
+currentViewport.onchange = (e) => {
     if (e.matches) {
         // When viewport width is larger than 1151px
         removeMenuButton();
