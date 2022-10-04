@@ -367,6 +367,7 @@ form .icon-button {
 }
 
 .trending-account p {
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -473,6 +474,10 @@ form .icon-button {
     .trending-account {
         display: flex;
         flex-direction: column;
+    }
+
+    .trending-account img {
+        margin-bottom: 5px;
     }
 
     .projects-container {
