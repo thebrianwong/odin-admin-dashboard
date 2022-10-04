@@ -454,8 +454,7 @@ form .icon-button {
     }
 
     .header-bottom > div:nth-child(2) > button {
-        min-width: 70px;
-        width: auto;
+        width: clamp(70px, 20%, 220px);
     }
 
     .contents-container {
@@ -474,6 +473,10 @@ form .icon-button {
     .trending-account {
         display: flex;
         flex-direction: column;
+    }
+
+    .trending-account p {
+        text-align: center;
     }
 
     .trending-account img {
