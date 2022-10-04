@@ -150,7 +150,7 @@ form .icon-button {
     grid-area: 1 / 1 / 3 / 2;
     height: 100px;
     justify-self: end;
-    margin: 0 10px;
+    margin: 0 10px 0 20px;
     width: auto;
 }
 
@@ -461,6 +461,7 @@ form .icon-button {
     .contents-container {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     .announcements-trending > div:nth-child(1) {
@@ -468,7 +469,7 @@ form .icon-button {
     }
 
     .announcements-trending > div:nth-child(2) {
-        margin: 20px 20px 0;
+        margin: 39.92px 20px 0;
     }
 
     .trending-account {
@@ -490,7 +491,12 @@ form .icon-button {
     }
 
     .projects-section {
+        margin-top: 39.92px;
         margin-right: 20px;
+    }
+
+    .projects-section h2 {
+        margin-top: 0;
     }
 
     /* for testing */
