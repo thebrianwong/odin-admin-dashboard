@@ -514,6 +514,10 @@ form .icon-button {
     margin: 0 15px 0 auto;
 }
 
+#menu-button > img {
+    border: solid 1px white;
+}
+
 #menu-button:active {
     background-color: #efb428;
 }
