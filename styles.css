@@ -17,48 +17,48 @@
     position: fixed;
 }
 
-.sidebar-section > *:nth-child(-n+3) * {
+.sidebar-section a {
     text-decoration: none;
 }
 
-.sidebar-section > ul {
+.sidebar-list {
     list-style: none;
 }
 
-.sidebar-section > ul > div {
+.sidebar-list div {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.sidebar-section > ul > div > li {
+.sidebar-list li {
     font-size: 1.75rem;
     font-weight: 500;
     padding-left: 15px;
 }
 
-.sidebar-section > div:nth-child(1) {
+.sidebar-header {
     display: flex;
     align-items: center;
     margin-left: 15px;
 }
 
-.sidebar-section > div:nth-child(1) > p {
+.sidebar-header p {
     font-size: 2rem;
     font-weight: 600;
     margin-left: 15px;
 }
 
-.sidebar-section > ul:nth-child(3) {
+#bottom-list {
     margin-top: 48px;
 }
 
-.sidebar-section > div:nth-child(4) {
+.credits-section {
     margin: 250px 0 0 78px;
     width: 155px;
 }
 
-.sidebar-section > div:nth-child(4) > p {
+.credits-section p {
     margin: 0;
     padding-bottom: 5px;
 }
@@ -104,21 +104,21 @@ form .icon-button {
     width: 100%;
 }
 
-.header-top > div {
+.profile-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
 }
 
-.header-top > div > button {
+.profile-section button {
     justify-self: end;
 }
 
-.header-top > div > a > img {
+.profile-section a img {
     margin: 0 10px;
 }
 
-.header-top > div > p {
+.profile-section p {
     font-weight: 600;
 }
 
@@ -135,13 +135,13 @@ form .icon-button {
     margin: 0 15px 20px 0;
 }
 
-.header-bottom > div:nth-child(1) {
+.welcome-header {
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
 }
 
-.header-bottom > div:nth-child(1) > img {
+.welcome-header img {
     grid-area: 1 / 1 / 3 / 2;
     height: 100px;
     justify-self: end;
@@ -149,27 +149,27 @@ form .icon-button {
     width: auto;
 }
 
-.header-bottom > div:nth-child(1) > p {
+.welcome-header p {
     font-weight: 600;
 }
 
-.header-bottom > div:nth-child(1) > p:nth-child(2) {
+.welcome-header p:nth-child(2) {
     font-size: 0.9rem;
     margin-bottom: 0;
 }
 
-.header-bottom > div:nth-child(1) > p:nth-child(3) {
+.welcome-header p:nth-child(3) {
     font-size: 1.5rem;
     margin-top: 0;
 }
 
-.header-bottom > div:nth-child(2) {
+.header-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
 }
 
-.header-bottom > div:nth-child(2) > button {
+.header-buttons button {
     appearance: none;
     background-color: #1892d3;
     border: none;
@@ -183,7 +183,7 @@ form .icon-button {
     width: 125px;
 }
 
-.header-bottom > div:nth-child(2) > button:active {
+.header-buttons button:active {
     background-color: #1379af;
     box-shadow: inset 0 3px 2px lightgray;
 }
@@ -204,6 +204,13 @@ form .icon-button {
     box-shadow: 1px 5px 5px #d3dae2;
 }
 
+.projects-container > div,
+.announcements-container > div,
+.trending-section > div {
+    display: grid;
+    background-color: white;
+}
+
 .projects-section {
     grid-area: 1 / 1 / 3 / 2;
     margin: 20px 0 39.920px 20px;
@@ -218,8 +225,6 @@ form .icon-button {
 .projects-card {
     height: auto;
     border-left: solid 7px #efb428;
-    border-radius: 8px;
-    box-shadow: 1px 5px 5px #d3dae2;
 }
 
 .projects-card > h3 {
@@ -244,18 +249,20 @@ form .icon-button {
 .icon-button {
     background: none;
     border: none;
+    cursor: pointer;
     padding: 0;
     height: 24px;
     margin-left: 15px;
 }
 
-.icon-button:hover {
-    cursor: pointer;
-}
-
 .icon-button:active {
     background-color: rgb(223, 223, 223);
     border-radius: 20px;
+}
+
+.announcements-section {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 39.92px 20px 0 0;
 }
 
 .announcements-container > div:nth-child(1) {
@@ -285,15 +292,6 @@ form .icon-button {
 .announcements-container > div:nth-child(3) {
     border-radius: 0 0 8px 8px;
     padding: 16px 32px 32px;
-}
-
-.announcements-section {
-    grid-area: 1 / 2 / 2 / 3;
-    margin: 39.92px 20px 0 0;
-}
-
-.announcement {
-    padding: 20px 25px;
 }
 
 .announcement > * {
@@ -328,18 +326,18 @@ form .icon-button {
     padding-bottom: 20px;
 }
 
-.trending-container img {
+.trending-account {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    padding: 10px 20px;
+}
+
+.trending-account img {
     height: 100px;
     width: auto;
     border: solid 1px lightgray;
     border-radius: 20px;
     place-self: center;
-}
-
-.trending-account {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    padding: 10px 20px;
 }
 
 .trending-account div {
@@ -364,11 +362,39 @@ form .icon-button {
     line-height: 1.25;
 }
 
-.projects-container > div,
-.announcements-container > div,
-.trending-section > div {
-    display: grid;
-    background-color: white;
+#menu-button {
+    cursor: pointer;
+    margin: 0 15px 0 auto;
+}
+
+#menu-button > img {
+    border: solid 1px white;
+}
+
+#menu-button:active {
+    background-color: #efb428;
+}
+
+@keyframes menu-animation-display {
+    from {height: 100px;}
+    to {height: 100vh;}
+}
+
+@keyframes menu-animation-hide {
+    from {height: 100vh;}
+    to {height: "";}
+}
+
+.menu-display {
+    animation-name: menu-animation-display;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-hide {
+    animation-name: menu-animation-hide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 @media (max-width: 1150px) {
@@ -496,39 +522,4 @@ form .icon-button {
         margin-bottom: 20px;
         width: 90%;
     }
-}
-
-#menu-button {
-    cursor: pointer;
-    margin: 0 15px 0 auto;
-}
-
-#menu-button > img {
-    border: solid 1px white;
-}
-
-#menu-button:active {
-    background-color: #efb428;
-}
-
-@keyframes menu-animation-display {
-    from {height: 100px;}
-    to {height: 100vh;}
-}
-
-@keyframes menu-animation-hide {
-    from {height: 100vh;}
-    to {height: "";}
-}
-
-.menu-display {
-    animation-name: menu-animation-display;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.menu-hide {
-    animation-name: menu-animation-hide;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
