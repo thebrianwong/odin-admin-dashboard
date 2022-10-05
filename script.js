@@ -18,13 +18,15 @@ const addMenuFunctionality = () => {
     menuButton.addEventListener("click", () => {
         const bodyElement = document.querySelector("body");
         const sidebarContainer = document.querySelector(".sidebar-container");
-        if (sidebarContainer.style.height === "100vh") {
+        if (sidebarContainer.classList.contains("menu-display")) {
             // Hides menu list
-            sidebarContainer.style.height = "";
+            sidebarContainer.classList.remove("menu-display");
+            sidebarContainer.classList.add("menu-hide");
             bodyElement.style.overflow = "";
         } else {
             // Displays menu list
-            sidebarContainer.style.height = "100vh";
+            sidebarContainer.classList.remove("menu-hide");
+            sidebarContainer.classList.add("menu-display");
             bodyElement.style.overflow = "hidden";
         }
     })

@@ -536,3 +536,25 @@ form .icon-button {
 #menu-button:active {
     background-color: #efb428;
 }
+
+@keyframes menu-animation-display {
+    from {height: 100px;}
+    to {height: 100vh;}
+}
+
+@keyframes menu-animation-hide {
+    from {height: 100vh;}
+    to {height: "";}
+}
+
+.menu-display {
+    animation-name: menu-animation-display;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-hide {
+    animation-name: menu-animation-hide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
