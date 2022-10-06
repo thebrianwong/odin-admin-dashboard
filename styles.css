@@ -408,30 +408,24 @@ form .icon-button {
     }
 
     .sidebar-section {
-        position: fixed;
         width: 100%;
     }
 
-    .sidebar-section > ul:nth-child(2),
-    .sidebar-section > ul:nth-child(3) {
+    .sidebar-list {
         margin: 0;
     }
 
-    .sidebar-section > div:nth-child(4) {
+    .credits-section {
         margin-top: 5vh;
     }
 
-    .header-container,
-    .header-container > div {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
     .header-container {
+        display: flex;
         flex-direction: column;
     }
 
     .header-container > div {
+        display: flex;
         margin-top: 20px;
     }
 
@@ -439,7 +433,7 @@ form .icon-button {
         margin-right: 0;
     }
 
-    .header-top > div > p {
+    .profile-section p {
        margin-right: 20px;
     }
 
@@ -455,17 +449,17 @@ form .icon-button {
         margin-right: 0;
     }
 
-    .header-bottom > div:nth-child(1) {
+    .welcome-header {
         display: none;
     }
 
-    .header-bottom > div:nth-child(2) {
+    .header-buttons {
         display: flex;
         flex: auto;
         justify-content: space-evenly;
     }
 
-    .header-bottom > div:nth-child(2) > button {
+    .header-buttons button {
         width: clamp(70px, 20%, 220px);
     }
 
@@ -475,11 +469,11 @@ form .icon-button {
         gap: 0;
     }
 
-    .announcements-trending > div:nth-child(1) {
+    .announcements-section {
         margin-left: 20px;
     }
 
-    .announcements-trending > div:nth-child(2) {
+    .trending-section {
         margin: 39.92px 20px 0;
     }
 
@@ -488,17 +482,12 @@ form .icon-button {
         flex-direction: column;
     }
 
-    .trending-account p {
-        text-align: center;
-    }
-
     .trending-account img {
         margin-bottom: 5px;
     }
 
-    .projects-container {
-        display: flex;
-        flex-direction: column;
+    .trending-account p {
+        text-align: center;
     }
 
     .projects-section {
@@ -510,6 +499,10 @@ form .icon-button {
         margin-top: 0;
     }
 
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 800px) {
