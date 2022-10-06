@@ -511,7 +511,7 @@ form .icon-button {
         flex-direction: column;
     }
 
-    #form {
+    form {
         align-self: center;
         margin-bottom: 20px;
         width: 90%;
