@@ -439,6 +439,7 @@ form .icon-button {
 
     form {
         flex: auto;
+        width: 100%;
     }
 
     form .icon-button {
